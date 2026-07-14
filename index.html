@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head<link rel="manifest" href="./manifest.json">>
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, viewport-fit=cover"
+>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="前方エリア">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#edf3f3">
+
+<title>前方エリア</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #edf3f3;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/*
+赤丸部分をタップできる透明ボタン。
+
+今の画像に合わせた位置。
+少しズレる場合は、この4項目だけ調整してね。
+*/
+.ticket-link {
+  position: absolute;
+
+  left: 19%;
+  top: 45%;
+
+  width: 64%;
+  height: 8.2%;
+
+  display: block;
+  z-index: 10;
+
+  /* 確認用。完成後は透明のままでOK */
+  background: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+</style>
+</head>
+
+<body>
+
+<main class="page">
+
+  <img
+    class="page-image"
+    src="./menu.JPG"
+    alt="前方エリア一覧"
+    draggable="false"
+  >
+
+  <a
+    class="ticket-link"
+    href="./ticket.html"
+    aria-label="ME:Iの前方エリア優先入場券を表示"
+  ></a>
+
+</main>
+
+</body>
+</html>

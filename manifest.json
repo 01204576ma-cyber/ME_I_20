@@ -1,0 +1,11 @@
+{
+  "name": "ME:I Ticket",
+  "short_name": "Ticket",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "orientation": "portrait"
+}
